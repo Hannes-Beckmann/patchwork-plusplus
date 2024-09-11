@@ -376,10 +376,10 @@ void PatchWorkpp::update_flatness_thr(void)
 
 void PatchWorkpp::reflected_noise_removal(Eigen::MatrixXf &cloud_in)
 {
-    if ( cloud_in.cols() < 4 ) {
-        cout << "RNR requires intensity information !" << endl;
-        return;
-    }
+    // if ( cloud_in.cols() < 4 ) {
+    //     cout << "RNR requires intensity information !" << endl;
+    //     return;
+    // }
 
     int cnt = 0;
     for (int i=0; i<cloud_in.rows(); i++)
